@@ -2,9 +2,9 @@
 declare(strict_types=1);
 require "functions.php";
 
-$url = "https://rickandmortyapi.com/api/character"; // URL de la API
+$url = "https://rickandmortyapi.com/api/character"; 
 $data = get_data($url);
-$characters = $data['results'] ?? []; // Extrae los personajes de la respuesta
+$characters = $data['results'] ?? []; 
 
-render_template("home", ["characters" => $characters]); // Renderiza la plantilla
+render_template("home", ["characters" => $characters]); 
 ?>
